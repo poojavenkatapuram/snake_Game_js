@@ -10,7 +10,7 @@ body{
 }
 :root{
     --bg-primary-color: rgb(34, 33, 33);
-
+    --bg-fill-color: rgb(244, 243, 236);
 
     --text-primary-color: rgb(238, 234, 234);
 
@@ -65,15 +65,16 @@ section .infos{
 .board{
     border:1px solid var(--border-primary-color);
     flex-grow: 1;
+    min-height: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
     
 }
 .block{
-    width:30px;
-    height:30px;
+    
     border:1px solid rgb(159, 248, 91);
     
     
+}
+.fill{
+    background-color: var(--bg-fill-color);
 }
